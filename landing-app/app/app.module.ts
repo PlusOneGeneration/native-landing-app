@@ -9,6 +9,7 @@ import {StartComponent} from "./start/start.component";
 import {RegistrationComponent} from "./registration/registration.component";
 import {RegistrationService} from "./services/registration.service";
 import {RegistrationResource} from "./resources/registration-resource";
+import {FinishComponent} from "./finish/finish.component";
 
 @NgModule({
     bootstrap: [
@@ -23,7 +24,8 @@ import {RegistrationResource} from "./resources/registration-resource";
     declarations: [
         AppComponent,
         StartComponent,
-        RegistrationComponent
+        RegistrationComponent,
+        FinishComponent
     ],
     providers: [
         RegistrationResource,
