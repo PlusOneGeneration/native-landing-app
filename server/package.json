@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^19.0.0"
   }
 }
