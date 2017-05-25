@@ -12,11 +12,11 @@ export class RegistrationResource {
 
     registration(data: any): Observable<any> {
         let headers = new Headers({
-            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            'Content-Type': 'application/json;charset=UTF-8'
         });
 
         return this.http.post(
-            this.registrationUrl, JSON.stringify(data), {headers: headers}
+            this.registrationUrl, data, {headers: headers}
         ).map((response) => {
             return response.json() || {};
         });
