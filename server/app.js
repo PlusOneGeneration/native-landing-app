@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/registration', function (req, res) {
-    console.log('reg.body', req.body.first);
+    console.log('reg.body', req.body);
     res.json({text: 'Hello World'});
 });
 

@@ -1,8 +1,8 @@
 <ActionBar title="Registration" class="action-bar"></ActionBar>
 <FlexboxLayout flexDirection="column" class="page">
-    <TextField hint="First name"></TextField>
-    <TextField hint="Last name"></TextField>
-    <TextField hint="Email name"></TextField>
+    <TextField hint="First name" [(ngModel)]="request.first"></TextField>
+    <TextField hint="Last name" [(ngModel)]="request.last"></TextField>
+    <TextField hint="Email name" [(ngModel)]="request.email"></TextField>
     <TextView hint="Message"></TextView>
 
     <Button text="Send" (tap)="registration()"></Button>

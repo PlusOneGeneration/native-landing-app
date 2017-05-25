@@ -8,16 +8,15 @@ import {Request} from '../models/Request';
     templateUrl: "registration.component.html",
 })
 export class RegistrationComponent {
-    request: Request;
+    request: Request = new Request();
 
     constructor(private registrationService: RegistrationService) {
     }
 
     registration() {
-        this.registrationService.registration({first: 'Ira'}).subscribe((result) => {
+        this.registrationService.registration(this.request).subscribe((result) => {
             console.dir(result);
         }, (err) => {
-            console.log('err', err);
             console.dir(err);
         });
     }
