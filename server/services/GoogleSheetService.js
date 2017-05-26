@@ -1,10 +1,10 @@
-let spreadsheetId = '1IfWAyHEOz9M0dJn4G1NqshQAvy6RFT8ydlHwJRAu5TA';
 let google = require('googleapis');
 let sheets = google.sheets('v4');
 
 module.exports = class GoogleSheetService {
-    constructor(GoogleAuthService) {
+    constructor(GoogleAuthService, spreadsheetId) {
         this.GoogleAuthService = GoogleAuthService;
+        this.spreadsheetId = spreadsheetId;
     }
 
     addData(data) {
@@ -25,7 +25,7 @@ module.exports = class GoogleSheetService {
         return new Promise((resolve, reject) => {
             sheets.spreadsheets.values.append({
                 auth: auth,
-                spreadsheetId: spreadsheetId,
+                spreadsheetId: this.spreadsheetId,
                 range: 'Sheet1!A1:D', //Change Sheet1 if your worksheet's name is something else
                 valueInputOption: "USER_ENTERED",
                 resource: {
@@ -47,7 +47,7 @@ module.exports = class GoogleSheetService {
         return new Promise((resolve, reject) => {
             sheets.spreadsheets.values.get({
                 auth: auth,
-                spreadsheetId: spreadsheetId,
+                spreadsheetId: this.spreadsheetId,
                 range: 'Sheet1!A1', //Change Sheet1 if your worksheet's name is something else
             }, (err, response) => {
                 if (err) {
