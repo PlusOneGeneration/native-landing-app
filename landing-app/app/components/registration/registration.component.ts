@@ -1,8 +1,8 @@
 import {Component} from "@angular/core";
 import {Router} from "@angular/router";
 
-import {RegistrationService} from "../services/registration.service";
-import {Request} from '../models/Request';
+import {RegistrationService} from "../../services/registration.service";
+import {Request} from '../../models/Request';
 
 @Component({
     selector: "ns-details",

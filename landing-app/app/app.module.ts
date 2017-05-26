@@ -5,11 +5,11 @@ import {NativeScriptHttpModule} from "nativescript-angular/http";
 
 import {AppRoutingModule} from "./app.routing";
 import {AppComponent} from "./app.component";
-import {StartComponent} from "./start/start.component";
-import {RegistrationComponent} from "./registration/registration.component";
+import {StartComponent} from "./components/start/start.component";
+import {RegistrationComponent} from "./components/registration/registration.component";
 import {RegistrationService} from "./services/registration.service";
 import {RegistrationResource} from "./resources/registration-resource";
-import {FinishComponent} from "./finish/finish.component";
+import {FinishComponent} from "./components/finish/finish.component";
 
 @NgModule({
     bootstrap: [
