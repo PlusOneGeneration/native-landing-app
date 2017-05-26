@@ -6,7 +6,7 @@ let SCOPES = ['https://www.googleapis.com/auth/spreadsheets']; //you can add mor
 const TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE) + '/.credentials/'; //the directory where we're going to save the token
 const TOKEN_PATH = TOKEN_DIR + 'sheets.googleapis.com-landing-app.json'; //the file which will contain the token
 
-class Authentication {
+module.exports = class GoogleAuthService {
     authenticate() {
         return new Promise((resolve, reject) => {
             let credentials = this.getClientSecret();
@@ -16,7 +16,7 @@ class Authentication {
     };
 
     getClientSecret() {
-        return require('./google_credentials.json');
+        return require('../config/google_credentials.json');
     }
 
     authorize(credentials) {
@@ -63,6 +63,7 @@ class Authentication {
                         console.log('Error while trying to retrieve access token', err);
                         reject();
                     }
+
                     oauth2Client.credentials = token;
                     this.storeToken(token);
                     resolve(oauth2Client);
@@ -79,9 +80,8 @@ class Authentication {
                 throw err;
             }
         }
+
         fs.writeFile(TOKEN_PATH, JSON.stringify(token));
         console.log('Token stored to ' + TOKEN_PATH);
     };
-}
-
-module.exports = new Authentication();
+};
