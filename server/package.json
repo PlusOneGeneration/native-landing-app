@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"nodemon -i node_modules/ app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,5 +15,8 @@
     "google-auth-library": "^0.10.0",
     "googleapis": "^19.0.0",
     "plus.application": "^1.1.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
