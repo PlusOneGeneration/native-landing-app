@@ -1,9 +1,16 @@
-<ActionBar title="My App" class="action-bar">
-</ActionBar>
+<ActionBar title="+1G Welcome"></ActionBar>
 
-<StackLayout class="page">
-    <Image src="https://fakeimg.pl/100x100/"></Image>
-    <Label text="Hello People!"></Label>
-    <Label [nsRouterLink]="['/registration']" text="Registration ->"
-           class="list-group-item"></Label>
-</StackLayout>
+
+<GridLayout rows="auto, *">
+    <Image src="http://plus1generation.com/img/logo/c_logo.png"
+           row="0" col="0"
+           class="start_image"></Image>
+    <Label class="start_text"
+           row="1" col="0"
+           text="You can leave your question on the next page, just tap by 'Registration' text"
+           textWrap="true"></Label>
+    <Label [nsRouterLink]="['/registration']"
+           row="2" col="0"
+           text="Registration - >"
+           class="start_registration"></Label>
+</GridLayout>

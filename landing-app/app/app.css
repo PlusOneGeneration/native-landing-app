@@ -10,3 +10,56 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
 @import 'nativescript-theme-core/css/core.light.css';
+
+.start_image {
+    width: 70%;
+    height: 30%;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 200px;
+}
+
+.start_text {
+    font-size: 26px;
+    font-style: italic;
+    text-align: center;
+    margin: 25px;
+    margin-top: 200px;
+}
+
+.start_registration {
+    text-align: right;
+    font-size: 22px;
+    font-style: italic;
+    margin-right: 110px;
+    margin-top: 750px;
+    color: #88d123;
+}
+
+.registration_text_field {
+    border-width: 0 0 1 0;
+    /*border-color: #88d123;*/
+    border-color: #65bbd1;
+    font-style: italic;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.registration_button {
+    margin-top: 10px;
+    border-radius: 10%;
+    background-color: #88d123;
+    font-size: 18px;
+    font-style: italic;
+    color: #ededed;
+}
+
+.finish_page {
+    margin-top: 42%;
+    font-size: 32px;
+    text-align: center;
+    color: #88d123;
+}
