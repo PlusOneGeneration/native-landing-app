@@ -1,16 +1,17 @@
 <ActionBar title="+1G Welcome"></ActionBar>
 
-
-<GridLayout rows="auto, *">
-    <Image src="http://plus1generation.com/img/logo/c_logo.png"
-           row="0" col="0"
-           class="start_image"></Image>
-    <Label class="start_text"
-           row="1" col="0"
-           text="You can leave your question on the next page, just tap by 'Registration' text"
-           textWrap="true"></Label>
-    <Label [nsRouterLink]="['/registration']"
-           row="2" col="0"
-           text="Registration - >"
-           class="start_registration"></Label>
-</GridLayout>
+<ScrollView>
+    <GridLayout rows="auto, *">
+        <Image src="http://plus1generation.com/img/logo/c_logo.png"
+               row="0" col="0"
+               class="start_image"></Image>
+        <Label class="start_text"
+               row="1" col="0"
+               text="You can leave your question on the next page, just tap by 'Registration' text"
+               textWrap="true"></Label>
+        <Label [nsRouterLink]="['/registration']"
+               row="2" col="0"
+               text="Registration  - >"
+               class="start_registration"></Label>
+    </GridLayout>
+</ScrollView>

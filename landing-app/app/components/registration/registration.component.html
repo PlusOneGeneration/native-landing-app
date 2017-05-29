@@ -1,21 +1,21 @@
 <ActionBar title="Registration"></ActionBar>
-<FlexboxLayout flexDirection="column">
-    <TextField hint="First name"
-               [(ngModel)]="request.first"
-               class="registration_text_field"
-    ></TextField>
-    <TextField hint="Last name"
-               [(ngModel)]="request.last"
-               class="registration_text_field"></TextField>
-    <TextField hint="Email name"
-               [(ngModel)]="request.email"
-               class="registration_text_field"></TextField>
-    <TextView hint="Message"
-              [(ngModel)]="request.message"
-              class="registration_text_field"></TextView>
+<ScrollView>
+    <FlexboxLayout flexDirection="column">
+        <TextField hint="First name"
+                   [(ngModel)]="request.first"
+                   class="registration_text_field"></TextField>
+        <TextField hint="Last name"
+                   [(ngModel)]="request.last"
+                   class="registration_text_field"></TextField>
+        <TextField hint="Email name"
+                   [(ngModel)]="request.email"
+                   class="registration_text_field"></TextField>
+        <TextView hint="Message"
+                  [(ngModel)]="request.message"
+                  class="registration_text_field"></TextView>
 
-    <Button text="Send"
-            (tap)="registration()"
-            class="registration_button"
-    ></Button>
-</FlexboxLayout>
+        <Button text="Send"
+                (tap)="registration()"
+                class="registration_button"></Button>
+    </FlexboxLayout>
+</ScrollView>

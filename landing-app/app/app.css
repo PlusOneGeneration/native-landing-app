@@ -16,7 +16,7 @@ refer to http://docs.nativescript.org/ui/theme.
     height: 30%;
     padding: 5px;
     margin: 10px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .start_text {
@@ -24,7 +24,7 @@ refer to http://docs.nativescript.org/ui/theme.
     font-style: italic;
     text-align: center;
     margin: 25px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .start_registration {
@@ -32,7 +32,7 @@ refer to http://docs.nativescript.org/ui/theme.
     font-size: 22px;
     font-style: italic;
     margin-right: 110px;
-    margin-top: 750px;
+    margin-top: 550px;
     color: #88d123;
 }
 
