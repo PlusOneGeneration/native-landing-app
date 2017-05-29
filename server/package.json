@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon -i node_modules/ app.js",
+    "start": "nodemon -i node_modules/ app.js",
+    "start.heroku":"npm install && POST=3000 nodemon -i node_modules/ app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
