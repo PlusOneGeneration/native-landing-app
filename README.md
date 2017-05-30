@@ -2,8 +2,11 @@
 
 Simple application for getting feedbacks or questions from people and store it in Google Sheets. This project consist of [NativeScript app](http://www.nativescript.org/) for Android and server side on [Express.js](http://expressjs.com/). The server side has deployed on [Heroku](https://devcenter.heroku.com/start). Looks like these:
 
-SCREENSHOTS!!!!
-![Tweety_search_by_nativescript](https://github.com/PlusOneGeneration/Tweety/blob/master/presentation_images/tweety_screenshot_nativescript.jpg)             ![Tweety_search_by_ua](https://github.com/PlusOneGeneration/Tweety/blob/master/presentation_images/tweety_screenshot_ua.jpg)
+![Start Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app.png)
+![Registration Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-forma-i.png)
+![Finish Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-finish.png)
+![Result in Google Sheet](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/landing-sheet.png)
+
 
 This project has written with:
 * [NativeScript](http://www.nativescript.org/)
@@ -21,7 +24,7 @@ Follow step by step and you will be run this project on your machine.
 * Clone project from GitHub by SSH link ```git@github.com:PlusOneGeneration/native-landing-app.git``` or HTTPS```https://github.com/PlusOneGeneration/native-landing-app.git```
 
 After those steps you can see a project structure as proposed below
-![Tweety_search_by_nativescript](https://github.com/PlusOneGeneration/Tweety/blob/master/presentation_images/tweety_screenshot_nativescript.jpg)
+![Project Structure](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/app-sctructure.png)
 
 For usage project as local you need two terminal tap
 * Server side [S] - > ```cd server/```
