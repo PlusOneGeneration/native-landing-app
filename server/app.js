@@ -11,6 +11,6 @@ require('./api/google-sheet')(app);
 let server_port = process.env.PORT || 3000;
 let server_host = process.env.HOST || '0.0.0.0';
 
-app.listen(server_port, server_host, function() {
+app.listen(server_port, server_host, () => {
     console.log('Server was started on port %d and on server %d', server_port, server_host);
 });
