@@ -2,9 +2,9 @@
 
 Simple application for getting feedbacks or questions from people and store it in Google Sheets. This project consist of [NativeScript app](http://www.nativescript.org/) for Android and server side on [Express.js](http://expressjs.com/). The server side has deployed on [Heroku](https://devcenter.heroku.com/start). Looks like these:
 
-![Start Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app.png)
-![Registration Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-forma-i.png)
-![Finish Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-finish.png)
+![Start Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app.jpg)
+![Registration Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-forma-i.jpg)
+![Finish Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-finish.jpg)
 ![Result in Google Sheet](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/landing-sheet.png)
 
 
