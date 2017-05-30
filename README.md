@@ -24,7 +24,11 @@ Follow step by step and you will be run this project on your machine.
 * Clone project from GitHub by SSH link ```git@github.com:PlusOneGeneration/native-landing-app.git``` or HTTPS```https://github.com/PlusOneGeneration/native-landing-app.git```
 
 After those steps you can see a project structure as proposed below
+
 ![Project Structure](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/app-sctructure.png)
+
+
+
 
 For usage project as local you need two terminal tap
 * Server side [S] - > ```cd server/```
