@@ -52,6 +52,9 @@ For testing application on mobile you need to follow by next steps:
 * go to ```platforms/android/build/outputs/apk``` and you have a ```landingapp-debug.apk``` file and you just need to download it on your mobile and run
 * run and install ```landingapp-debug.apk```. Voila! You have landing-app on your phone
 
+## Presentation
+You can get presentation, how it's works from [here](https://github.com/PlusOneGeneration/native-landing-app/tree/master/presentation)
+
 ## Authors
 * **_Irina Drozdova (feya)_** - developer
 
