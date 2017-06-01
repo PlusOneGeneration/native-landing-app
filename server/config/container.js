@@ -4,5 +4,6 @@ module.exports = function (container) {
     container.register('GoogleAuthService', require('../services/GoogleAuthService'));
     container.register('GoogleSheetService', require('../services/GoogleSheetService'), ['GoogleAuthService',
         'config/spreadsheetId']);
+    container.register('FormValidationService', require('../services/FormValidationService'), []);
 
 };

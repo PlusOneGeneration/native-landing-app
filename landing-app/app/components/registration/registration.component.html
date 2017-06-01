@@ -1,18 +1,27 @@
 <ActionBar title="Registration"></ActionBar>
+
 <ScrollView>
     <FlexboxLayout flexDirection="column">
         <TextField hint="First name"
+                   [ngClass]="{incorrectField: errors['first']}"
                    [(ngModel)]="request.first"
                    class="registration_text_field"></TextField>
+        <Label *ngFor="let error of errors['first']" [text]="error" class="incorrectField_label"></Label>
         <TextField hint="Last name"
+                   [ngClass]="{incorrectField: errors['last']}"
                    [(ngModel)]="request.last"
                    class="registration_text_field"></TextField>
+        <Label *ngFor="let error of errors['last']" [text]="error" class="incorrectField_label"></Label>
         <TextField hint="Email name"
+                   [ngClass]="{incorrectField: errors['email']}"
                    [(ngModel)]="request.email"
                    class="registration_text_field"></TextField>
+        <Label *ngFor="let error of errors['email']" [text]="error" class="incorrectField_label"></Label>
         <TextView hint="Message"
+                  [ngClass]="{incorrectField: errors['message']}"
                   [(ngModel)]="request.message"
                   class="registration_text_field"></TextView>
+        <Label *ngFor="let error of errors['message']" [text]="error" class="incorrectField_label"></Label>
 
         <Button text="Send"
                 (tap)="registration()"

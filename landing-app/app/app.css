@@ -63,3 +63,16 @@ refer to http://docs.nativescript.org/ui/theme.
     text-align: center;
     color: #88d123;
 }
+
+.incorrectField {
+    background-color: #f5f4b6;
+    border-bottom-color: #e3f513;
+    border-bottom-width: 1;
+}
+
+.incorrectField_label {
+    text-align: center;
+    font-size: 17;
+    font-style: italic;
+    color: #568213;
+}
