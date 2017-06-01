@@ -1,6 +1,5 @@
 import {Component} from "@angular/core";
 import {Router} from "@angular/router";
-import dialogs = require("ui/dialogs");
 
 import {RegistrationService} from "../../services/registration.service";
 import {Request} from '../../models/Request';
@@ -12,7 +11,7 @@ import {Request} from '../../models/Request';
 })
 export class RegistrationComponent {
     request: Request = new Request();
-    errors: string;
+    errors = [];
 
     constructor(private registrationService: RegistrationService,
                 private router: Router) {
@@ -21,13 +20,10 @@ export class RegistrationComponent {
     registration() {
         this.registrationService.registration(this.request)
             .subscribe((result) => {
+                this.errors = [];
                 this.router.navigate(['finish']);
             }, (err) => {
                 this.errors = err._body;
-                dialogs.alert(this.errors).then(function () {
-                    console.log("Dialog closed!");
-                    console.dir(err);
-                });
             });
     }
 }
