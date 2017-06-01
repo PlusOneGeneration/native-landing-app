@@ -1,5 +1,7 @@
 module.exports = (app) => {
     let GoogleSheetService = app.container.get("GoogleSheetService");
+    let FormValidationService = app.container.get("FormValidationService");
+
     let form = require('express-form'),
         field = form.field;
 
@@ -10,13 +12,9 @@ module.exports = (app) => {
         field("message").trim().isAlphanumeric().required()
     );
 
-    app.use('/', GoogleSheetForm);
+    app.use('/', GoogleSheetForm, FormValidationService.isValid);
 
-    app.post('/registration', function (req, res) {
-        if (!req.form.isValid) {
-            return res.status(400).json(req.form.errors);
-        }
-
+    app.post('/registration', (req, res) => {
         GoogleSheetService
             .addData(req.form)
             .then((result) => {
@@ -27,5 +25,4 @@ module.exports = (app) => {
                 res.json(result);
             });
     });
-
 };
