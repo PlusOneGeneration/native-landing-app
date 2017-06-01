@@ -11,16 +11,19 @@ import {Request} from '../../models/Request';
 })
 export class RegistrationComponent {
     request: Request = new Request();
+    errors = [];
 
     constructor(private registrationService: RegistrationService,
-                private router:Router) {
+                private router: Router) {
     }
 
     registration() {
-        this.registrationService.registration(this.request).subscribe((result) => {
-            this.router.navigate(['finish']);
-        }, (err) => {
-            console.dir(err);
-        });
+        this.registrationService.registration(this.request)
+            .subscribe((result) => {
+                this.errors = [];
+                this.router.navigate(['finish']);
+            }, (err) => {
+                this.errors = err._body;
+            });
     }
 }
