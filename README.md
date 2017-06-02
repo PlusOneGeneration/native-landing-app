@@ -4,6 +4,7 @@ Simple application for getting feedbacks or questions from people and store it i
 
 ![Start Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app.jpg)
 ![Registration Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-forma-i.jpg)
+![Validation_Registration Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-forma-i-validation.jpg)
 ![Finish Page](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/%2B1g-app-finish.jpg)
 ![Result in Google Sheet](https://github.com/PlusOneGeneration/native-landing-app/blob/master/presentation_screen/landing-sheet.png)
 
