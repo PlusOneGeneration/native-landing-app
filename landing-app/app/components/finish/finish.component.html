@@ -1,5 +1,14 @@
 <ActionBar title="Goodbye"></ActionBar>
 
-<StackLayout>
-    <Label text="Thanks!" class="finish_page"></Label>
-</StackLayout>
+<GridLayout width="100%" height="100%" rows="4*,*">
+    <Label row="0"
+           text="Thanks!"
+           class="finish_page_label">
+    </Label>
+
+    <Button row="1"
+            [nsRouterLink]="['/start']"
+            text="Home Page"
+            class="finish_page_button">
+    </Button>
+</GridLayout>
