@@ -9,7 +9,7 @@ module.exports = (app) => {
         field("first").trim().isAlphanumeric().required(),
         field("last").trim().isAlphanumeric(),
         field("email").trim().isEmail().required(),
-        field("message").trim().isAlphanumeric().required()
+        field("message").trim().required()
     );
 
     app.use('/', GoogleSheetForm, FormValidationService.isValid);
