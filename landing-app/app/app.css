@@ -11,24 +11,21 @@ refer to http://docs.nativescript.org/ui/theme.
 */
 @import 'nativescript-theme-core/css/core.light.css';
 
-.start_image {
-    width: 370;
-    height: 300;
-}
-
-.start_text {
-    font-size: 24;
+.start_page_text {
+    font-size: 23;
     font-style: italic;
     text-align: center;
-    margin: 15;
+    margin: 4% 1% 0;
 }
 
-.start_registration {
-    text-align: right;
-    font-size: 22;
+.start_page_button {
+    text-align: center;
+    text-transform: none;
+    font-size: 24;
     font-style: italic;
-    margin: 230 40 10 auto;
-    color: #88d123;
+    margin-top: 25%;
+    color: #ededed;
+    background-color: #88d123;
 }
 
 .registration_text_field {
@@ -49,8 +46,8 @@ refer to http://docs.nativescript.org/ui/theme.
 }
 
 .finish_page {
-    /*margin-top: 270;*/
-    margin: 10;
+    margin-top: 42%;
+    /*margin: 10;*/
     font-size: 32;
     text-align: center;
     color: #88d123;
